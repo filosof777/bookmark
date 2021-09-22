@@ -4,12 +4,160 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Bookmark</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://col-css.netlify.app/css/column.css">
   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+  <header id="header">
+    <div class="container">
+      <div class="row align-center between">
+        <a href="#"><img src="img/logo.svg" alt="logo" width="148" height="25"></a>
+        <nav class="nav__header">
+          <ul class="nav__list row">
+            <li class="nav__item"><a class="nav__link nav__link--active" href="#">FEATURES</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">PRICING</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">CONTACT</a></li>
+            <li class="nav__item"><a class="nav__link button__red" href="#">LOGIN</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
   
+  <section id="hero">
+    <div class="container">
+      <div class="row">
+        <div class="hero__des">
+          <h1 class="hero__title">A Simple Bookmark Manager</h1>
+          <p class="hero__text">A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+          <button class="hero__blue-btn button__hero">Get it on Chrome</button>
+          <button class="hero__white-btn button__hero">Get it on Firefox</button>
+        </div>
+      </div>
+      <div class="hero__img">
+        <img src="img/hero-img.png" alt="hero-img" width="578" height="385">
+      </div>
+    </div>
+  </section>
+  
+  <section id="featured">
+    <div class="container">
+      <div class="center">
+        <h2 class="featured__title">Features</h2>
+        <div class="row center">
+          <p class="featured__text">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
+        </div>
+        <ul class="featured__list row center">
+          <li class="featured__item"><button class="featured__btn featured__btn--active">Simple Bookmarking</button></li>
+          <li class="featured__item"><button class="featured__btn">Speedy Searching</button></li>
+          <li class="featured__item"><button class="featured__btn">Easy Sharing</button></li>
+        </ul>
+      </div>
+      <div class="featured__des">
+        <h3 class="featured__titles">Bookmark in one click</h3>
+        <p class="featured__txt">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+        <button class="hero__blue-btn button__hero">More Info</button>
+        </div>
+    </div>
+  </section>
+
+  <section class="extensions">
+    <div class="container">
+      <header class="extensions__header">
+        <h2 class="extensions__title">Download the extension</h2>
+        <p class="extensions__text">We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to prioritize.</p>
+      </header>
+      <ul class="extensions__list">
+        <li class="extensions__item extension extension__chrome">
+          <div class="extension__top">
+            <h3 class="extension__title">Add to Chrome</h3>
+            <p class="extension__text">Minimum version 62</p>
+          </div>
+          <div class="extension__bottom">
+            <a class="extension__link button button--blue button--block" href="#">Add & Install Extension</a>
+          </div>
+        </li>
+        <li class="extensions__item extension extension__firefox">
+          <div class="extension__top">
+            <h3 class="extension__title">Add to Firefox</h3>
+            <p class="extension__text">Minimum version 55</p>
+          </div>
+          <div class="extension__bottom">
+            <a class="extension__link button button--blue button--block" href="#">Add & Install Extension</a>
+          </div>
+        </li>
+        <li class="extensions__item extension extension__opera">
+          <div class="extension__top">
+            <h3 class="extension__title">Add to Opera</h3>
+            <p class="extension__text">Minimum version 46</p>
+          </div>
+          <div class="extension__bottom">
+            <a class="extension__link button button--blue button--block" href="#">Add & Install Extension</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <section class="extension">
+    <div class="container">
+      <div class="row">
+        <header class="header__extension">
+          <h2 class="extension-title">Download the extension</h2>
+          <p class="extension-text">We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to prioritize.</p>
+        </header>
+        <ul class="extension-card__list row center">
+          <li class="extension-card__item center">
+            <img class="extension-card__img" src="img/chrome.svg" alt="chrome" width="102" height="100">
+            <h3 class="extension-card__title">Add to Chrome</h3>
+            <p class="extension-card__text">Minimum version 62</p>
+            <a class="extension-card__link" href="#">Add & Install Extension</a>
+          </li>
+          <li class="extension-card__item center">
+            <img class="extension-card__img" src="img/firefox.svg" alt="firefox" width="105" height="100">
+            <h3 class="extension-card__title">Add to Chrome</h3>
+            <p class="extension-card__text">Minimum version 62</p>
+            <a class="extension-card__link" href="#">Add & Install Extension</a>
+          </li>
+          <li class="extension-card__item center">
+            <img class="extension-card__img" src="img/opera.svg" alt="opera" width="96" height="100">
+            <h3 class="extension-card__title">Add to Chrome</h3>
+            <p class="extension-card__text">Minimum version 62</p>
+            <a class="extension-card__link" href="#">Add & Install Extension</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section> -->
 </body>
 </html>
